@@ -4,9 +4,11 @@
   "description": "Reusable business research Apps, company evidence, public Answers and automations.",
   "author": {
     "name": "FifthRow",
-    "email": "support@fifthrow.com"
+    "email": "support@fifthrow.com",
+    "url": "https://fifthrow.com"
   },
   "homepage": "https://fifthrow.com",
   "license": "MIT",
-  "repository": "https://github.com/fifthrow-inc/lcm"
+  "repository": "https://github.com/fifthrow-inc/lcm",
+  "displayName": "FifthRow LCM"
 }

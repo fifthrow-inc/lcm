@@ -12,7 +12,7 @@ Claude Code: `/plugin marketplace add fifthrow-inc/lcm`, then `/plugin install f
 
 Codex: `codex plugin marketplace add fifthrow-inc/lcm`. Install and test through the desktop plugin directory in a new chat. Cursor: add this repository in Settings > Plugins and choose FifthRow LCM.
 
-Directory submissions point Claude and Cursor at `plugins/fifthrow-lcm`. OpenAI accepts the separately generated `openai.zip`; it does not require GitHub for this submission. Microsoft uses separately generated Microsoft 365 packages through Partner Center. Do not commit ZIPs, MCP UI bundles, backend code, account fixtures or secrets into this repository.
+For Claude's public directory, submit the remote MCP URL as a connector and this repository's `plugins/fifthrow-lcm` folder as a plugin bundle from the same Claude organization. Pair the listings in the developer portal. Claude's custom marketplace installation alone is not a directory submission. Cursor's public marketplace takes the repository URL and reviews the plugin folder. OpenAI accepts the separately generated `openai.zip`; it does not require GitHub for this submission. Microsoft uses separately generated Microsoft 365 packages through Partner Center. Do not commit ZIPs, MCP UI bundles, backend code, account fixtures or secrets into this repository.
 
 ## Documentation and support
 
