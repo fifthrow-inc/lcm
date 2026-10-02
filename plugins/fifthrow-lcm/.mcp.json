@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "fifthrow-lcm": {
+      "type": "http",
+      "url": "https://mcp.fifthrow.com/lcm/v1"
+    }
+  }
+}

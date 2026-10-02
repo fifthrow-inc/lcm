@@ -1,0 +1,16 @@
+{
+  "name": "fifthrow",
+  "owner": {
+    "name": "FifthRow",
+    "email": "support@fifthrow.com"
+  },
+  "plugins": [
+    {
+      "name": "fifthrow-lcm",
+      "source": "./plugins/fifthrow-lcm",
+      "description": "FifthRow provides reusable research Apps for market sizing, competitor analysis, customer segmentation and due diligence. Discover a workflow, inspect its inputs and start an authorized analysis. Read company knowledge, documents and existing reports, research narrow public questions with Answers, and manage requested recurring automations. Results include original source references and paged full outputs. Background task cards and automatic assistant continuation depend on the client. A FifthRow account is required. Public Answers questions and results enter a globally shared library; confidential information belongs only in authorized company workflows.",
+      "logo": "./plugins/fifthrow-lcm/logo-light.svg",
+      "license": "MIT"
+    }
+  ]
+}
