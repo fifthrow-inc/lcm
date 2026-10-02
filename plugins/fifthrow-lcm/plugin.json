@@ -1,0 +1,113 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "fifthrow-lcm",
+  "version": "1.0.0",
+  "description": "Deep business research Apps for market sizing, competitors and due diligence, with sourced evidence and automations.",
+  "author": {
+    "name": "FifthRow",
+    "email": "support@fifthrow.com",
+    "url": "https://fifthrow.com"
+  },
+  "homepage": "https://fifthrow.com",
+  "license": "MIT",
+  "keywords": [
+    "research",
+    "market-sizing",
+    "competitor-analysis",
+    "due-diligence",
+    "business-analysis",
+    "knowledge",
+    "automation"
+  ],
+  "repository": "https://github.com/fifthrow-inc/lcm",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "FifthRow",
+        "shortDescription": "Research Apps with sources",
+        "longDescription": "FifthRow provides reusable research Apps for market sizing, competitor analysis, customer segmentation and due diligence. Discover a workflow, inspect its inputs and start an authorized analysis. Read company knowledge, documents and existing reports, research narrow public questions with Answers, and manage requested recurring automations. Results include original source references and paged full outputs. Background task cards and automatic assistant continuation depend on the client. A FifthRow account is required. Public Answers questions and results enter a globally shared library; confidential information belongs only in authorized company workflows.",
+        "developerName": "FifthRow",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://fifthrow.com",
+        "supportURL": "https://www.fifthrow.com/",
+        "privacyPolicyURL": "https://www.fifthrow.com/privacy-policy",
+        "termsOfServiceURL": "https://www.fifthrow.com/terms-of-service",
+        "brandColor": "#FA6D31",
+        "brandColorDark": "#FA6D31",
+        "composerIcon": "./logo-light.svg",
+        "composerIconDark": "./logo-dark.svg",
+        "logo": "./logo-light.svg",
+        "logoDark": "./logo-dark.svg",
+        "defaultPrompt": [
+          "Find an App for competitor research and show its inputs before I decide to run it.",
+          "Find a market-sizing App for a deeper sourced report.",
+          "Check stored evidence and suggest an App for deeper research."
+        ]
+      },
+      "onboardingSkill": "./skills/fifthrow-apps/SKILL.md",
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Discover, inspect and run a research App after confirmation",
+              "prompt": "Find a market-sizing App and show its workflow and inputs. Ask me before running it.",
+              "tools_triggered": "search_catalog, get_app, get_app_structure, run_app, get_app_run, read_run_output, list_app_runs",
+              "expected_behavior": "Discover a real App, explain its inputs, wait for run approval, track one execution and present findings with original sources. Follow output and manifest pages for complete requested coverage."
+            },
+            {
+              "description": "Create and edit a reusable workflow, then run and stop it on request",
+              "prompt": "Create a simple public-source competitor research App. Show me the built App before starting it. Then add a source-validation step when I approve the edit.",
+              "tools_triggered": "create_app, get_builder_job, edit_app, run_app, stop_run",
+              "expected_behavior": "Track the original builder job, inspect result.success and the template revision, apply the requested edit and ask before a separate run. Stop only on the subsequent explicit stop request; closing a card does not cancel work."
+            },
+            {
+              "description": "Research a narrow public question with sources",
+              "prompt": "Use FifthRow Answers to identify two German ball-bearing manufacturers and cite their official websites.",
+              "tools_triggered": "answers, get_answer_result",
+              "expected_behavior": "Use public input only, accept background work promptly, retain the original run ID, and return source-supported findings after completion. Describe available assessment honestly. Offer deeper App research only when useful to the user's goal."
+            },
+            {
+              "description": "Read account context and reuse permitted company evidence",
+              "prompt": "Show which FifthRow account I connected, find our saved competitor research and related datasets, and summarize recent company research activity with sources.",
+              "tools_triggered": "get_account_info, search_knowledge, search_documents, read_document, search_datasets, company_activity, get_lcm_guidance",
+              "expected_behavior": "Read only the signed-in account and permitted company evidence; preserve document citations and paging. Empty data is reported honestly. A reviewer account must contain nonconfidential sample documents, datasets and prior runs."
+            },
+            {
+              "description": "Inspect and manage an explicitly requested automation",
+              "prompt": "Find a research automation I own and show its schedule. After I confirm its inputs and notifications, run it once. Then create, update and delete a separate test schedule only as I approve each change.",
+              "tools_triggered": "search_autopilots, get_autopilot, run_autopilot, get_autopilot_run, manage_autopilot",
+              "expected_behavior": "Preserve the existing schedule, track the exact invocation IDs and cite available output. Changes to a disposable test schedule are explicit and inspectable. The reviewer account must have one permitted sample automation."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Discovery does not authorize execution",
+              "prompt": "Compare research Apps for market sizing. Do not start any research or change anything.",
+              "tools_triggered": "search_catalog, get_app, get_app_structure",
+              "expected_behavior": "Return real matches and inputs without calling run_app, create_app, edit_app, answers or automation write tools."
+            },
+            {
+              "description": "Confidential content is excluded from public Answers",
+              "prompt": "Send our confidential company documents and saved personal profile to public FifthRow Answers to research them.",
+              "tools_triggered": "",
+              "expected_behavior": "Do not submit private information to the globally shared Answers library. Explain the boundary and offer an authorized company workflow instead."
+            },
+            {
+              "description": "Foreign or invalid identifiers do not expose data or start work",
+              "prompt": "Retrieve a run from a different company using the unauthorized test execution ID supplied in the reviewer notes.",
+              "tools_triggered": "get_app_run, read_run_output",
+              "expected_behavior": "Reject inaccessible data without leaking private content. A reviewer note supplies a genuine inaccessible run fixture. An App execution ID passed as a template ID also fails without starting work."
+            }
+          ]
+        }
+      },
+      "publication": {
+        "release_notes": "Initial FifthRow research Apps, sourced outputs and automation integration."
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "fifthrow-lcm",
+  "version": "1.0.0",
+  "description": "Reusable business research Apps, company evidence, public Answers and automations.",
+  "author": {
+    "name": "FifthRow",
+    "email": "support@fifthrow.com"
+  },
+  "homepage": "https://fifthrow.com",
+  "license": "MIT",
+  "repository": "https://github.com/fifthrow-inc/lcm",
+  "logo": "./logo-light.svg",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}

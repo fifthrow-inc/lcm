@@ -1,0 +1,20 @@
+{
+  "name": "fifthrow",
+  "interface": {
+    "displayName": "FifthRow"
+  },
+  "plugins": [
+    {
+      "name": "fifthrow-lcm",
+      "source": {
+        "source": "local",
+        "path": "./plugins/fifthrow-lcm"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
