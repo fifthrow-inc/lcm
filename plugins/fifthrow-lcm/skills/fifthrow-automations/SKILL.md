@@ -5,6 +5,8 @@ description: Inspects and manages FifthRow automation schedules and manually tri
 
 # FifthRow automations
 
+LCM stands for Large Consulting Model, FifthRow's consulting-agent platform.
+
 Use this skill for requested FifthRow schedule inspection or changes. Explicit user instructions take priority over workflow preferences.
 
 Find schedules with `search_autopilots`, using `mine` by default and `company` for company schedules. Read `get_autopilot` before updating so omitted settings remain unchanged. Verify the target and required inputs against its current App contract.

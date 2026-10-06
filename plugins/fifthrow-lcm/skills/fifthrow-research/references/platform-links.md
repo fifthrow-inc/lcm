@@ -1,5 +1,7 @@
 # FifthRow platform links and identifiers
 
+LCM stands for Large Consulting Model, FifthRow's consulting-agent platform.
+
 Use the canonical URL returned by the tool for the exact resource the user wants. Keep its configured environment and company origin. Never replace a detail link with the dashboard, strip a company subdomain, guess a hostname, or turn an API endpoint into a UI link. If no supported detail URL is available, explain that and present the tool result; do not invent a link.
 
 | Resource | Platform path | Correct identifier and returned field |
