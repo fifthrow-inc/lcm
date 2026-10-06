@@ -6,9 +6,9 @@
   "author": {
     "name": "FifthRow",
     "email": "support@fifthrow.com",
-    "url": "https://fifthrow.com"
+    "url": "https://www.fifthrow.com"
   },
-  "homepage": "https://fifthrow.com",
+  "homepage": "https://www.fifthrow.com",
   "license": "MIT",
   "keywords": [
     "research",
@@ -32,7 +32,7 @@
           "Read",
           "Write"
         ],
-        "websiteURL": "https://fifthrow.com",
+        "websiteURL": "https://www.fifthrow.com",
         "supportURL": "https://www.fifthrow.com/",
         "privacyPolicyURL": "https://www.fifthrow.com/privacy-policy",
         "termsOfServiceURL": "https://www.fifthrow.com/terms-of-service",
