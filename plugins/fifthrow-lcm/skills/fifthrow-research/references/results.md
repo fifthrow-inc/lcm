@@ -1,5 +1,7 @@
 # Presenting FifthRow results
 
+LCM stands for Large Consulting Model, FifthRow's consulting-agent platform.
+
 Answer in the user's language. Give a useful summary, dates, units and limitations. Include the exact returned platform detail/result link. Cards may be hidden inside a trace, so important state, links, findings and problems must also appear in normal chat text.
 
 ## Background status in chat

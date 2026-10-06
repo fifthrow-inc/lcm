@@ -1,5 +1,7 @@
 # FifthRow LCM support
 
+LCM stands for Large Consulting Model, FifthRow's consulting-agent platform.
+
 Contact **support@fifthrow.com** for connection, account, workflow, research or data-deletion questions. Include the client name/version, operation ID, approximate time and a nonconfidential description of the problem. Never send passwords, access tokens, OAuth client secrets or private customer documents.
 
 ## Connection

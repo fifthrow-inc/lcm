@@ -1,6 +1,14 @@
-# FifthRow LCM
+# FifthRow: Agentic Consulting
 
-FifthRow provides reusable research Apps for market sizing, competitor analysis, customer segmentation and due diligence. Discover a workflow, inspect its inputs and start an authorized analysis. Read company knowledge, documents and existing reports, research narrow public questions with Answers, and manage requested recurring automations. Results include original source references and paged full outputs. Background task cards and automatic assistant continuation depend on the client. A FifthRow account is required. Public Answers questions and results enter a globally shared library; confidential information belongs only in authorized company workflows.
+LCM stands for Large Consulting Model, FifthRow's consulting-agent platform.
+
+Turn business questions into structured analysis backed by original sources. The FifthRow Large Consulting Model (LCM) brings consulting agents and reusable research workflows into your chat for market sizing, competitor analysis, customer segmentation and due diligence.
+
+Create a research App tailored to your question, or reuse a workflow whose scope matches it. Inspect its workflow and inputs, and approve its execution. Follow its progress in supported clients, explore complete reports and ask your assistant to evaluate the findings with source references.
+
+Reuse accessible company knowledge, documents and previous research for context. Use Answers for a quick, focused public question, or set up recurring research through authorized automations.
+
+A FifthRow account is required. Access follows your account permissions. Answers questions and results enter a shared public library; confidential information should remain in authorized company workflows.
 
 ## Setup
 
@@ -8,7 +16,7 @@ Connect `https://mcp.fifthrow.com/lcm/v1` as a remote Streamable HTTP MCP server
 
 ## Workflows
 
-- Discover an App for market sizing, competitors or due diligence, inspect its input contract, and confirm the intended run.
+- Design a custom App for the requested decision and scope, or reuse a catalog App only after inspecting its actual Flows and step instructions. Confirm the intended run.
 - Create or edit a reusable workflow when the requested analysis needs one, inspect the completed builder result, and approve a separate run when needed.
 - Reuse company facts, documents, datasets and prior reports with original citations.
 - Research a narrow public question with Answers and inspect its answer, sources and assessment.
