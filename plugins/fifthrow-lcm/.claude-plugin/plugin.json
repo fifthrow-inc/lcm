@@ -10,5 +10,7 @@
   "homepage": "https://www.fifthrow.com",
   "license": "MIT",
   "repository": "https://github.com/fifthrow-inc/lcm",
-  "displayName": "FifthRow: Agentic Consulting"
+  "displayName": "FifthRow: Agentic Consulting",
+  "icon": "./logo.png",
+  "privacyPolicyUrl": "https://www.fifthrow.com/privacy-policy"
 }
