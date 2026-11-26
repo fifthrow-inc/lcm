@@ -22,7 +22,7 @@ For Claude's public directory, submit the remote MCP URL as a connector and this
 
 ## Documentation and support
 
-Read [the plugin documentation](plugins/fifthrow-lcm/README.md) for setup, account requirements, background work, lossless outputs and data boundaries. Contact support@fifthrow.com for help. Public Answers inputs and results are globally shared; confidential information belongs in authorized company workflows.
+Read [the plugin documentation](plugins/fifthrow-lcm/README.md) for setup, account requirements, background work, lossless outputs and data boundaries. Skill tool calls use the declared FifthRow LCM MCP connector; the hosted LCM service may process relevant inputs with third-party AI model and search providers to deliver requested operations. See the privacy policy for details. Contact support@fifthrow.com for help. Public Answers inputs and results are globally shared; confidential information belongs in authorized company workflows.
 
 ## Releases
 
